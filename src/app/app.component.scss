@@ -1,0 +1,12 @@
+@mixin gradient($from, $to) {
+
+    background-color: $from;
+    background-image: -webkit-linear-gradient($from, $to);
+    background-image: -moz-linear-gradient($from, $to);
+    background: linear-gradient($from, $to);
+  
+}
+
+.title {
+  @include gradient(#917c4d, #dfc97b);
+}
